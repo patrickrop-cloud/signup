@@ -28,6 +28,32 @@
       "password": "123456",
       "confirmpassword": "123456",
       "id": 4
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "Yator",
+      "email": "yatoor@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 5
+    },
+    {
+      "firstName": "Hilla",
+      "lastName": "Hill",
+      "email": "hilla@gmail.com",
+      "password": "hill@123",
+      "confirmpassword": "hill@123",
+      "gender": "",
+      "id": 6
+    },
+    {
+      "firstName": "drggr",
+      "lastName": "eggrgr",
+      "email": "reggrrg",
+      "password": "eggrg",
+      "confirmpassword": "eerg",
+      "gender": "male,female,rather not say",
+      "id": 7
     }
   ],
   "comments": [
