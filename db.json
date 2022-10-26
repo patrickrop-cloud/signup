@@ -1,0 +1,43 @@
+{
+  "signup": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "firstName": "Patrick",
+      "lastName": "Rop",
+      "email": "patrickrop399@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 2
+    },
+    {
+      "firstName": "Mohamed",
+      "lastName": "Maalim",
+      "email": "moha@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 3
+    },
+    {
+      "firstName": "Alan",
+      "lastName": "Alantoz",
+      "email": "alan@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
