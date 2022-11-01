@@ -12,14 +12,16 @@
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Email Address</label>
                           <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <small *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="text-danger">&nbsp;Email is required!</small>
                           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">Password</label>
                           <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                          <small *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="text-danger">&nbsp;Password is required!</small>
                         </div>
                         <div id="login">
-                            <button type="submit" class="btn btn-primary" style="width: 300px; font-size: 18px;">Log In</button>
+                            <button type="submit" class="btn btn-primary" style="width: 300px; font-size: 18px;" [disabled]="loginForm.invalid">Log In</button>
                         </div>
                         
                         <div class="mb-3">

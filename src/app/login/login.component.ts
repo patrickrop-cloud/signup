@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from "@angular/forms"
+import { FormGroup, FormBuilder, Validators } from "@angular/forms"
 import { Router } from '@angular/router';
 
 @Component({
@@ -17,8 +17,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
-      email:[''],
-      password:['']
+      email:['',Validators.required],
+      password:['',Validators.required]
     })
   }
   login(){
@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
         alert("User not found");
       }
     },err=>{
-        alert("Try agin");
+        alert("Please Try agin");
     })
   }
 

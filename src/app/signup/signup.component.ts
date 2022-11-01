@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormBuilder } from "@angular/forms"
+import { FormGroup,FormBuilder, Validators } from "@angular/forms"
 import { FormsModule, ReactiveFormsModule} from "@angular/forms"
 import { Router } from '@angular/router';
 
@@ -17,12 +17,12 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
     this.signupForm = this.formBuilder.group({
-      firstName:[''],
-      lastName:[''],
-      email:[''],
-      password:[''],
-      confirmpassword:[''],
-      gender:['male,female,rather not say']
+      firstName:['',Validators.required],
+      lastName:['',Validators.required],
+      email:['',Validators.required],
+      password:['',Validators.required],
+      confirmpassword:['',Validators.required],
+      gender:['male,female,rather not say',Validators.required]
     })
   }
   signUp(){
@@ -32,7 +32,7 @@ export class SignupComponent implements OnInit {
       this.signupForm.reset();
       this.router.navigate(['login']);
     },err=>{
-        alert("Try again");
+        alert("Please Try again");
     })
 
   }

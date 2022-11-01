@@ -13,7 +13,8 @@
                     <form [formGroup]="signupForm" (ngSubmit)="signUp()">
                         <div class="mb-3">
                             <label class="form-label">First Name</label>
-                            <input type="text" formControlName="firstName" class="form-control" id="formGroupExampleInput" placeholder="">
+                            <input type="text" formControlName="firstName" class="form-control" id="formGroupExampleInput" placeholder="firstname">
+                            <small *ngIf="signupForm.get('firstName')?.invalid && signupForm.get('firstName')?.touched" class="text-danger">&nbsp;First Name is required!</small>
                           </div>
                           <div class="mb-3">
                             <label  class="form-label">Last Name</label>
@@ -23,14 +24,17 @@
                           <label class="form-label">Email Address</label>
                           <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
                           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          <small *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched" class="text-danger">&nbsp;Email is required!</small>
                         </div>
                         <div class="mb-3">
                           <label class="form-label">Password</label>
                           <input formControlName="password" type="password" class="form-control" id="">
+                          <small *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched" class="text-danger">&nbsp;Password is required!</small>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Confirm Password</label>
                             <input formControlName="confirmpassword" type="password" class="form-control" id="">
+                            <small *ngIf="signupForm.get('confirmpassword')?.invalid && signupForm.get('confirmpassword')?.touched" class="text-danger">&nbsp;Confirm Password is required!</small>
                           </div>
                           <div class="mb-3">
                             <label class="form-label">Choose Gender</label>
@@ -47,7 +51,7 @@
                               </div>
                           </div>
                           <div id="signup">
-                            <button type="submit" class="btn btn-primary" style="width: 300px; font-size: 15px;">Sign Up</button>
+                            <button type="submit" class="btn btn-primary" style="width: 300px; font-size: 15px;"[disabled]="signupForm.invalid">Sign Up</button>
                           </div>
                       </form>
                       <div id="route">
