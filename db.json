@@ -1,0 +1,114 @@
+{
+  "signup": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "firstName": "Patrick",
+      "lastName": "Rop",
+      "email": "patrickrop399@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 2
+    },
+    {
+      "firstName": "Mohamed",
+      "lastName": "Maalim",
+      "email": "moha@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 3
+    },
+    {
+      "firstName": "Alan",
+      "lastName": "Alantoz",
+      "email": "alan@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 4
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "Yator",
+      "email": "yatoor@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 5
+    },
+    {
+      "firstName": "Hilla",
+      "lastName": "Hill",
+      "email": "hilla@gmail.com",
+      "password": "hill@123",
+      "confirmpassword": "hill@123",
+      "gender": "",
+      "id": 6
+    },
+    {
+      "firstName": "drggr",
+      "lastName": "eggrgr",
+      "email": "reggrrg",
+      "password": "eggrg",
+      "confirmpassword": "eerg",
+      "gender": "male,female,rather not say",
+      "id": 7
+    },
+    {
+      "firstName": "Will",
+      "lastName": "Smith",
+      "email": "willsmith@gmail.com",
+      "password": "will123",
+      "confirmpassword": "will123",
+      "gender": "male,female,rather not say",
+      "id": 8
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@gmail.com",
+      "password": "john123",
+      "confirmpassword": "john123",
+      "gender": "male,female,rather not say",
+      "id": 9
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "gender": "male,female,rather not say",
+      "id": 10
+    },
+    {
+      "firstName": "Patrick",
+      "lastName": "Rop",
+      "email": "patrickrop399@gmail.com",
+      "password": "456789",
+      "confirmpassword": "456789",
+      "gender": "male,female,rather not say",
+      "id": 11
+    },
+    {
+      "firstName": "Patrick",
+      "lastName": "Rop",
+      "email": "patrickrop399@gmail.com",
+      "password": "0123",
+      "confirmpassword": "0123",
+      "gender": "male,female,rather not say",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
